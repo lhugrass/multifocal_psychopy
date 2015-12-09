@@ -269,7 +269,3 @@ pylab.ylabel('n frames')
 pylab.title("Inter Flip Intervals\nMean=%.2fms, s.d.=%.2f, range=%.2f-%.2f ms"%(ifis.mean(), ifis.std(),ifis.min(), ifis.max()), fontsize=12)
 pylab.tight_layout()
 pylab.show()
-
-#Save screenshot. Maybe outcomment these line during production.
-win.getMovieFrame()   # Defaults to front buffer, I.e. what's on screen now.
-win.saveMovieFrame('screenshot')  # save with a descriptive and unique filename.
